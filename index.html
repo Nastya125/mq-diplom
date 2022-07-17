@@ -117,7 +117,7 @@
                 </article>
         </div>
 
-        <section class="main-container">
+        <div class="main-container">
 
             <main class="article-container">
               <!--Контейнер для превью статей - основной блок-->
@@ -238,13 +238,13 @@
           
                 </div>
               </article>
-          
+            
           
             </main>
           
             <aside class="side-bar">
               <!--Контейнер для доп инфы - правый блок-->
-          
+            <section> 
               <h3 class="title-h3">Новые посты</h3>
           
               <article class="aside-content">
@@ -317,7 +317,7 @@
                 <button class="search__button" type="submit"><span class="screen_read">Кнопка поиска</span></button>
           
               </form>
-              
+            </section>  
           
               <section class="mail">
                 <h2 class="name_mail">Рассылка</h2>
@@ -407,13 +407,138 @@
               </section>
               
             </aside>
-            </div>
+
+        </div>
           
             </aside>
           
+            <section class="products">
+              <div class="container_2">
+                <h2 class="theme-heading">Наши изделия</h2>
+                <ul class="products-list">
+                  <li class="product">
+                    <div class="product-imgs">
+                      <picture> 
+                        <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
+                        <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 360px)" class="mobile-img">
+                        <img src="images/shop-item-desk1.jpg" alt="подушка" class="product-img">
+                      </picture>
+                    </div>
+                    <div class="product-container">
+                      <h3 class="card-heading">
+                        подушки на диван
+                      </h3>
+                      <p class="product-description">
+                        Набор из двух подушек с модными принтами. Видео о создании <a class="product-description-link">здесь</a>.
+                      </p>
+                      <div class="price-container">
+                        <div class="prices">
+                          <span class="price-before">
+                            1000 &#8381
+                          </span>
+                          <span class="price">
+                            800 &#8381
+                          </span>
+                        </div>
+                        <button class="btn product-btn">в магазин</button>
+                      </div>
+                    </div>
+                  </li>            
+                  <li class="product">
+                    <div class="product-imgs">
+                      <picture> 
+                        <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 361px) and (max-width: 767px)">
+                        <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 360px)" class="mobile-img">
+                        <img src="images/shop-item-desk2.jpg" alt="подушка" class="product-img">
+                      </picture>
+                    </div>
+                    <div class="product-container">
+                      <h3 class="heading card-heading">
+                        Кукла «Зайчик»
+                      </h3>
+                      <p class="product-description">
+                        Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-description-link">весенняя серия постов</a> в блоге и несколько подкастов.
+                      </p>
+                      <div class="price-container">
+                        <div class="prices">
+                          <span class="price-before vis-hidden">
+                            1000 &#8381
+                          </span>
+                          <span class="price">
+                            3500 &#8381
+                          </span>
+                        </div>
+                        <button class="btn product-btn">в магазин</button>
+                      </div>
+                    </div>
+                  </li>            
+                  <li class="product">
+                    <div class="product-imgs">
+                      <picture> 
+                        <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 361px) and (max-width: 767px)">
+                        <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 360px)" class="mobile-img">
+                        <img src="images/shop-item-desk3.jpg" alt="подушка" class="product-img">
+                      </picture>
+                    </div>
+                    <div class="product-container">
+                      <h3 class="heading card-heading">
+                        Шестиугольная рамка
+                      </h3>
+                      <p class="product-description">
+                        Необычная рамка для украшения дома из видео <a class="product-description-link">«Как сделать рамку из подручных средств за 30 минут»</a>.
+                      </p>
+                      <div class="price-container">
+                        <div class="prices">
+                          <span class="price-before">
+                            500 &#8381
+                          </span>
+                          <span class="price">
+                            400 &#8381
+                          </span>
+                        </div>
+                        <button class="btn product-btn">в магазин</button>
+                      </div>
+                    </div>
+                  </li>            
+                </ul>
+              </div>
+            </section>
             
-	</div>   
-
-    <footer></footer>
+            <footer class="footer">
+              <div class="footer-container">
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="" class="social-link twitter-icon">
+                      <span class="social-name">twitter</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link pinterest-icon">
+                      <span class="social-name">pinterest</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link facebook-icon">
+                      <span class="social-name">facebook</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link instagram-icon">
+                      <span class="social-name">instagram</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link tumblr-icon">
+                      <span class="social-name">tumblr</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="copyright">
+                  <a href="" class="copyright-link">        
+                  <span class="copyright-info">Copyright © 2009–2019 City Blog LLC.</span>
+                  </a>
+                </div>
+              </div>
+            </footer>
 </body>
 </html>
