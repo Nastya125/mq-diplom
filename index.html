@@ -118,6 +118,7 @@
         </div>
 
         <div class="main-container">
+          
 
             <main class="article-container">
               <!--Контейнер для превью статей - основной блок-->
@@ -411,7 +412,7 @@
         </div>
           
             </aside>
-          
+          </div>
             <section class="products">
               <div class="container_2">
                 <h2 class="theme-heading">Наши изделия</h2>
@@ -540,5 +541,52 @@
                 </div>
               </div>
             </footer>
+
+            <div class="modal vis-hidden">
+              <div class="modal-container">
+                <h2 class="theme-heading">
+                  ваш фидбек
+                </h2>
+                <form action="#" class="modal-form">
+                    <div class="date-container">
+                      <label  for="frequency">
+                        <p class="question">Как часто вы заходите на сайт?</p>
+                      </label>
+                      <select name="select" id="frequency" class="select">
+                        <option value="value1" selected>Почти каждый день</option>
+                        <option value="value2" >Раз в несколько дней</option>
+                        <option value="value3" >Раз в несколько недель</option>
+                        <option value="value4" >Несколько раз в год</option>
+                      </select>
+                    </div>
+                    <div class="choise-container">
+                      <p class="question">
+                          Вы подписаны на e-mail рассылку?
+                      </p>
+                      <div class="radio-wrapper">                  
+                        <label for="choiseYes" class="label-radio">
+                          <input type="radio" class="email-radio" name="choise" id="choiseYes" value="Да" checked>
+                          <span class="radio-description">Да</span>
+                        </label>
+                        <label for="choiseNo" class="label-radio">
+                          <input type="radio" class="email-radio" name="choise" id="choiseNo" value="Нет">
+                          <span class="radio-description">Нет</span>
+                        </label>
+                      </div>
+                    </div>
+                    <label class="textarea-container">
+                      <p class="question">Расскажите, какой контент вы хотели бы видеть
+                        на нашем сайте?
+                      </p>
+                      <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Может, больше рецептов?" class="textarea-modal"></textarea>
+                    </label>
+                    <button class="btn modal-btn" type="submit">
+                      отправить
+                    </button>
+                </form>
+              </div>
+            </div>
+
+
 </body>
 </html>
