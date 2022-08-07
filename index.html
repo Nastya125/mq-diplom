@@ -11,7 +11,7 @@
     <div class="wrapper">
 
 
-        <header class="header">
+      <header class="header">
             <div class="header__container">
  
                 <nav class="menu">
@@ -35,87 +35,67 @@
             </div>
 
             <div class="container-title">      
-                <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
+                <h1 class="header-title underlined-title">Блог о творчестве, спорте, и образе жизни</h1>
             </div>  
-        </header>
+      </header>
 
 
-        <div class="trends">
-            <h2 class="title-now_in_trands">Сейчас в тренде</h2>
-
-            <div class="container">
-                <article class="card">
-                    <div class="card__preview">
-                        <img src="images\trend1.jpg" class="card__img" alt="">
-                    
-                        <div class="card__body">
-
-                        <ul class="top-links_trands">
-                            <li class="tag-url"><a href=#>Lifestyle</a></li>
-                            <li class="tag-url"><a href=#>Interior</a></li>
+      <section class="actual-trends">
+        <h2 class="underlined-title actual-trends-title">
+            Сейчас в тренде
+        </h2>
+        <div class="actual-trends-wrapper">
+            <div class="actual-trends-item trends-pic01">
+                <div class="actual-trends-content">
+                    <ul class="post-category">
+                        <li><a href="#0">lifestyle</a></li>
+                        <li><a href="#0">interior</a></li>
                     </ul>
-
-                        <h3 class="card__name">Сейчас в тренде: сад 
-                            на подоконнике</h3>
-
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="card">
-                    <div class="card__preview">
-                        <img src="images\trend2.jpg" class="card__img" alt="">
-                    
-                        <div class="card__body">
-
-                        <ul class="top-links_trands">
-                            <li class="tag-url"><a href=#>Food</a></li>
-                            
+                    <h3 class="post-title actual-trends-title">
+                        <a href="#0">сейчас в тренде: сад на подоконнике</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="actual-trends-item trends-pic02">
+                <div class="actual-trends-content">
+                    <ul class="post-category">
+                        <li><a href="#0">food</a></li>
                     </ul>
-
-                        <h3 class="card__name">сыры на красивых картинках из интернета: какие они на вкус?</h3>
-
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="card">
-                    <div class="card__preview">
-                        <img src="images\trend3.jpg" class="card__img" alt="">
-                    
-                        <div class="card__body">
-
-                        <ul class="top-links_trands">
-                            <li class="tag-url"><a href=#>Lifestyle</a></li>
-                            <li class="tag-url"><a href=#>Travel</a></li>
+                    <h3 class="post-title actual-trends-title">
+                        <a href="#0"
+                            >сыры на красивых картинках из интернета: какие
+                            они на вкус?</a
+                        >
+                    </h3>
+                </div>
+            </div>
+            <div class="actual-trends-item trends-pic03">
+                <div class="actual-trends-content">
+                    <ul class="post-category">
+                        <li><a href="#0">lifestyle</a></li>
+                        <li><a href="#0">travel</a></li>
                     </ul>
-
-                        <h3 class="card__name">Собираемся в первый поход в горы</h3>
-
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="card">
-                    <div class="card__preview">
-                        <img src="images\trend4.jpg" class="card__img" alt="">
-                    
-                        <div class="card__body">
-
-                        <ul class="top-links_trands">
-                            <li class="tag-url"><a href=#>Food</a></li>
-                            <li class="tag-url"><a href=#>Health</a></li>
+                    <h3 class="post-title actual-trends-title">
+                        <a href="#0">собираемся в первый поход в горы</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="actual-trends-item trends-pic4">
+                <div class="actual-trends-content">
+                    <ul class="post-category">
+                        <li><a href="#0">food</a></li>
+                        <li><a href="#0">health</a></li>
                     </ul>
-
-                        <h3 class="card__name">Сейчас в тренде: сколько витамина С в лимонах?</h3>
-
-                        </div>
-                    </div>
-                </article>
+                    <h3 class="post-title actual-trends-title">
+                        <a href="#0"
+                            >сейчас в тренде: сколько витамина с в
+                            лимонах?</a
+                        >
+                    </h3>
+                </div>
+            </div>
         </div>
+      </section>
 
         <div class="main-container">
           
@@ -414,10 +394,10 @@
             </aside>
           </div>
             <section class="products">
-              <div class="container_2">
-                <h2 class="theme-heading">Наши изделия</h2>
-                <ul class="products-list">
-                  <li class="product">
+              <div class="container_product">
+                <h2 class="underlined-title">Наши изделия</h2>
+                <div class="products-list">
+                  <article class="product">
                     <div class="product-imgs">
                       <picture> 
                         <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
@@ -426,7 +406,7 @@
                       </picture>
                     </div>
                     <div class="product-container">
-                      <h3 class="card-heading">
+                      <h3 class="card-heading heading">
                         подушки на диван
                       </h3>
                       <p class="product-description">
@@ -441,11 +421,11 @@
                             800 &#8381
                           </span>
                         </div>
-                        <button class="btn product-btn">в магазин</button>
+                        <a href="#" class="btn product-btn">в магазин</a>
                       </div>
                     </div>
-                  </li>            
-                  <li class="product">
+                  </article>            
+                  <article class="product">
                     <div class="product-imgs">
                       <picture> 
                         <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 361px) and (max-width: 767px)">
@@ -469,11 +449,11 @@
                             3500 &#8381
                           </span>
                         </div>
-                        <button class="btn product-btn">в магазин</button>
+                        <a href="#" class="btn product-btn">в магазин</a>
                       </div>
                     </div>
-                  </li>            
-                  <li class="product">
+                  </article>            
+                  <article class="product">
                     <div class="product-imgs">
                       <picture> 
                         <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 361px) and (max-width: 767px)">
@@ -497,11 +477,11 @@
                             400 &#8381
                           </span>
                         </div>
-                        <button class="btn product-btn">в магазин</button>
+                        <a href="#"class="btn product-btn">в магазин</a>
                       </div>
                     </div>
-                  </li>            
-                </ul>
+                  </article>            
+                </div>
               </div>
             </section>
             
@@ -542,8 +522,12 @@
               </div>
             </footer>
 
-            <div class="modal vis-hidden">
+          <div class="modal">
+            
+            
               <div class="modal-container">
+                
+
                 <h2 class="theme-heading">
                   ваш фидбек
                 </h2>
@@ -585,8 +569,10 @@
                     </button>
                 </form>
               </div>
-            </div>
-
+           
+            
+          </div>
+        </div>     
 
 </body>
 </html>

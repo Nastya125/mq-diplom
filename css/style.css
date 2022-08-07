@@ -30,6 +30,75 @@ body, html {
     overflow-x: hidden; 
     max-width: 100%; 
 }
+
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.underlined-title {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underlined-title::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 70px;
+  background-color: #b59f5b;
+  margin: 10px auto 0 auto;
+}
+.post-category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.post-category a {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b59f5b;
+  opacity: 0.75;
+  transition: opacity 0.2s linear;
+}
+
+.post-category li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.post-category > li > a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.post-title {
+  margin-top: 15px;
+}
+
+.post-title a {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
 /*--------------------- 1 блок - Хэдер ---------------------------- */
 .whrapper {
     width: 100%;
@@ -116,150 +185,110 @@ body, html {
     margin-left: auto;
     margin-right: auto; 
 } 
+
+.logo-menu {
+  width: 180px;
+}
 /*----------------- конец 1 блока - Хэдер ------------------- */
 
 
 /*----------------- 2 блок - Сейчас в тренде ------------------ */
-.trends {
-    font-size: 20px;
+
+.actual-trends {
+  margin-top: 65px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.title-now_in_trands {
-    padding-top: 2em;
-    padding-bottom: 1em;
+.actual-trends-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.actual-trends-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actual-trends-item {
+  display: flex;
+  width: 24.75%;
+  height: 348px;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  background-color: #444444;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 320px;
+  margin-right: 4px;
+}
+
+.actual-trends-item:last-child {
+  margin-right: 0;
+}
+
+
+.actual-trends-item::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.trends-pic01 {
+  background-image: url(../images/trend1.jpg);
+}
+
+.trends-pic02 {
+  background-image: url(../images/trend2.jpg);
+}
+
+.trends-pic03 {
+  background-image: url(../images/trend3.jpg);
+}
+
+.trends-pic4 {
+  background-image: url(../images/trend4.jpg);
+}
+
+.actual-trends-content {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 40px 35px 35px;
+  border: 4px solid rgba(181, 159, 91, 0.6);;
+  position: absolute;
+  z-index: 10;
   
-    font-size: 1em;
-    line-height: 1.45;
-    font-weight: 700;
-    color: #0f0d0e;
-    font-family: "OpenSans", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .title-now_in_trands::after {
-    content: "";
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 1.25em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 3.3em;
-    height: 0.15em;
-    background-color: #b59f5b;
-  }
+}
 
+.actual-trends-title {
+  margin-top: 5px;
+}
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.actual-trends-title a {
+  font-size: 20px;
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
 
-  .container_2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .card {
-    position: relative;
-    color: #ffffff;
-    width: 24.625%;
-  }
-
-  .card:nth-of-type(1) {
-    margin-right: 0.5%;
-  }
-  
-  .card:nth-of-type(2) {
-    margin-right: 0.5%;
-  }
-
-  .card:nth-of-type(3) {
-    margin-right: 0.5%;
-  }
-
-  .card:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(29, 29, 29, 0.60);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
-  .card__img {
-    width: 100%;
-    display: block;
-    background-size: cover;
-  }
-
-  .card__body {
-    font-size: 20px;
-    width: 100%;
-    padding: 1em;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    z-index: 2;
-  }
-
-  .card__body:before{
-    content: "";
-    width: calc(100% - 45px);
-    height: calc(100% - 20px);
-    border: 3px solid #b59f5b;
-    opacity: 0.6;
-    position: absolute;
-    top: 10px;
-    left: 10px;  
-  }
-  
-  .card__name {
-    margin: 0.5em 1.5em 1em 0.7em;
-    font-size: 1em; 
-    line-height: 1.2;
-    text-shadow: 0 0 2px #000000;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: "OpenSans", sans-serif;
-  }
-
-
-  .top-links_trands {
-    font-size: 0.7em;
-    font-weight: 700;
-    font-family: "OpenSans", sans-serif;
-    text-transform: uppercase;
-    color: #b59f5b;
-    text-decoration: none;
-    list-style: none;
-    margin-left: 0;
-    margin-left: 1em;
-    margin-top: 1.5em;
-  }
-
-  .top-links_trands a {
-    text-decoration: none;
-    color: #b59f5b;
-  }
-  
-  .tag-url {
-    display: inline-block;
-    align-items: flex-start;
-  }
-  
-  .tag-url:hover {
-    text-decoration: underline;
-  }
-  
-  .tag-url:nth-child(n + 2) {
-    margin-left: 15px;
-  }
+.actual-trends-title a:hover {
+  color: #b59f5b;
+}
   
 /*----------------Конец 2 блока - Сейчас в тренде --------------- */
 
@@ -272,6 +301,8 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .article-container {
@@ -295,12 +326,18 @@ body, html {
   .article-img {
     max-width: 380px;
     align-self: flex-start;
+    
+
   }
   
   .content-text {
     margin: 30px 0 0 30px;
     margin-top: 0;
   }
+
+  .container-title {
+    font-size: 45px; 
+    }
   
   .title-h2 {
     padding-top: 10px;
@@ -408,7 +445,7 @@ body, html {
   }
   
   .side-bar {
-    width: 280px;
+    width: 270px;
     
   }
   
@@ -698,6 +735,13 @@ body, html {
 
 /* products */
 
+.container_product {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .products {
   margin-top: 65px;
   font-size: 15px;
@@ -785,6 +829,7 @@ body, html {
 .product-btn {
   padding: 1em 1.85em;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .card-heading {
@@ -875,22 +920,28 @@ body, html {
 /* modal  */
 
 .modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-size: 13px;
-  background-color: rgba(0, 0, 0, 0.6);
+ visibility: hidden;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ font-size: 13px;
+ background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
 }
 
+
 .modal-container {
-  width: 390px;
-  padding: 55px 30px;
+  max-width: 100%;;
+  width: 320px;
+  padding: 50px 30px;
   background-color: #ffffff;
+  position: fixed;
 }
 
 .modal-form {
@@ -898,6 +949,9 @@ body, html {
   flex-direction: column;
   gap: 26px;
 }
+
+
+
 
 .question {
   margin-bottom: 10px;
@@ -971,29 +1025,22 @@ body, html {
   color: #ffffff;
 }
 
-
-
-@media (min-width: 1200px) {
-    /*--------------- 1 блок - Хэдер ---------- */
-    .header {
-    background-image: url("../images/banner-bg.jpg");
-    }
-
-  .container-title {
-    font-size: 45px; 
-    }
-
-    .logo-menu {
-        width: 180px;
-    }
-    /*---------- конец 1 блока - Хэдер ---------- */
-}
     
 
   @media (min-width: 768px) and (max-width: 1199px) {
     /*--------------- 1 блок - Хэдер ---------- */
 
+    .modal{
+      max-width: 1199px;
+    }
+
     
+    
+    .modal-container{
+      max-width: 50%;
+      
+    }
+
     .header {
     background-image: url("../images/banner-bg-tablet.jpg");  
     
@@ -1046,53 +1093,67 @@ body, html {
             padding-right: 30px;
         }
 
-    .products-list {
-          flex-wrap: wrap;
+     .actual-trends {
+        margin-top: 50px;
     }
 
-    .product {
-          min-width: 200px;
-          width: calc(50% - 30px);
+    .actual-trends-title {
+      font-size: 18px;
+  }
+
+    .actual-trends-wrapper {
+      margin-top: 15px;
     }
+
+    .actual-trends-content {
+      padding: 30px;
+    }
+
+    .actual-trends-title a {
+      font-size: 16px;
+    }
+
+    .post-category {
+      margin-top: 15px;
+  }
+
+
       
-/*---------- 2 блок - В тренде ---------- */
-.card {
-    width: 49.5%;
+
+.actual-trends-item {
+    width: 49.4%;
     }
 
-.title-now_in_trands {
-    font-size: 18x;
-    margin-top: 40px;
-    }
 
-.card__name {
-        margin: 0.7em 2em 1em 1.5em;
-    }
-
-.top-links {
-    margin-left: 2.2em;
-}
-.card:nth-of-type(1) {
+.actual-trends-item:nth-of-type(1) {
     margin-bottom: 0.5%;
       }
       
-.card:nth-of-type(2) {
+.actual-trends-item:nth-of-type(2) {
         margin-bottom: 0.5%;
       }
 
+  .products-list {
+        flex-wrap: wrap;
+  }
 
-/*---------- 3 блок - главный + сайдбар ---------- */
+  .product {
+        min-width: 200px;
+        width: calc(50% - 30px);
+  }
 
 
 .main-container { 
   justify-content: center;
   margin-top: 50px;
+  width: 100%;
+
 }
     
   
 
   .article-container {
-      width: 50%;
+      width: 390px;
   }
 
   .article-img {
@@ -1112,18 +1173,42 @@ body, html {
     width: 390px;
 }
 
-.top-links { 
-    margin-left: 0;  
-}
 
 .side-bar {
     
-    margin-left: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
+.container_product{
+  margin-left: 25px;
+  margin-right: 25px;
 }
+
+
+
+  }
+
 
   @media (min-width: 240px) and (max-width: 767px) {
+    .whrapper{
+      max-width: 100vw;
+    }
+
+    body{
+      max-width: 100vw;
+    }
+
+
+    .modal{
+      max-width: 100vw;
+    }
+    
+    .modal-container{
+      max-width: 100%;
+    }
+
+
     .header {
     background-image: url("../images/banner-mobile.jpg");   
     padding: 30px;
@@ -1189,21 +1274,17 @@ body, html {
 /*---------- конец 1 блока - Хэдер ---------- */
 
 
-.card {
+.actual-trends-item {
     width: 100%;
     margin-bottom: 1%;
     }
 
-    .container-title {
-        font-size: 16px; 
-        
-        }
 
-    .card__body {
+    .actual-trends-content {
         font-size: 16px;
     }
 
-    .top-links {
+    .post-category {
             font-size: 14px;   
         }
 
@@ -1255,6 +1336,10 @@ body, html {
 
 .side-bar{
   padding: 0;
+}
+
+.footer{
+  max-width: 100vw;
 }
 
 }
